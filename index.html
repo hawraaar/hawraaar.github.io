@@ -1,1 +1,69 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Center everything on the page */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* Light background color */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Style for the logo */
+        .logo {
+            width: 150px;
+            height: 150px;
+            background-image: url('hypso_logo.png');
+            /* Replace with the path to your logo */
+            background-size: cover;
+            border-radius: 50%;
+            animation: spin-like-coin 3s infinite ease-in-out;
+            transform-style: preserve-3d;
+        }
+
+        /* Coin spinning animation */
+        @keyframes spin-like-coin {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        /* Style for the text */
+        .coming-soon {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="coming-soon">Coming Soon...</div>
+    </div>
+</body>
+
+</html>
